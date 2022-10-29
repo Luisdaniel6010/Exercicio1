@@ -5,9 +5,11 @@ body{
 
 header{
 background-color: darkgrey;
-height: 60px;
+height: 65px;
 border-radius: 5px;
 font-weight: 600;
+border: solid 2px rgb(33, 220, 245);
+
 }
 
 a {
@@ -33,7 +35,8 @@ a:hover {
   border-radius: 50%; 
   position: absolute;
   left: 30%;
-  top: 22px;
+  top: 12px;
+  border: solid 2px rgb(33, 220, 245);
 }
 .avatar2 {
     border-radius: 50%; 
@@ -83,4 +86,58 @@ a:hover {
     position: relative;
     left: 35%;
     top: -110px;
+    text-align: justify;
+    
   }
+.formacao {
+  width: 600px;
+    position: relative;
+    left: 35%;
+    top: 0px;
+}
+.formacaos{
+  background-color: darkgray;
+    position: relative;
+    border: solid 2px rgb(33, 220, 245) ;
+    border-radius: 5px;
+    
+}
+.experience {
+  border: solid 2px;
+  border-color: rgb(33, 220, 245);
+  border-radius: 5px;
+}
+.unica1 {
+  position: relative;
+  left: 1%;
+  padding-right: 5%;
+  text-align: justify;
+}
+.unica2 {
+  position: relative;
+  left: 1%;
+
+}
+
+.card1{
+  background-color: darkgray;
+  position: relative;
+  border: solid 2px rgb(33, 220, 245) ;
+  border-radius: 5px;
+
+}
+.card3 {
+  width: 300px;
+  position: relative;
+  left: 40%;
+}
+.repositorio {
+  background-color: rgb(7, 97, 109);
+  border:solid 2px;
+  border-radius: 5px;
+  border-color: rgb(33, 220, 245);
+ 
+}
+.repositorio:hover {
+  color: #fff;
+}
