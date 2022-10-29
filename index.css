@@ -29,7 +29,7 @@ nav li{
 }
 
 a:hover {
-    color: #fff;
+    color: #42faee;
 }
 .avatar {
   border-radius: 50%; 
@@ -147,3 +147,51 @@ a:hover {
   align-items: center;
   cursor: pointer;
 }
+
+.feet {
+  position: relative;
+  left: 0%;
+  border: solid 2px;
+  border-color: rgb(33, 220, 245);
+  border-radius: 5px;
+
+}
+
+.contato {
+  position: relative;
+  left: 2%;
+  padding-right: 10%;
+  border-color: rgb(33, 220, 245)
+
+}
+.contatos {
+  position: relative;
+  padding-right: 10%;
+  border-color: rgb(33, 220, 245)
+
+}
+
+.card__imagenf {
+  width: 50px;
+  height: 50px;
+  margin: 0 0 0 5px;
+}
+
+.card2{
+position: relative;
+height: 450px;  
+width: 200px;
+position: relative;
+left: 50%;
+top: -200%;
+}
+
+.card__info {
+  position: relative;
+  height: 450px;  
+  width: 400px;
+  position: relative;
+  left: 50%;
+  display:contents;
+  letter-spacing: 1px;
+  } 
