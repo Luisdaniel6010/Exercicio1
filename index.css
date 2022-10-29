@@ -132,7 +132,7 @@ a:hover {
   left: 40%;
 }
 .repositorio {
-  background-color: rgb(7, 97, 109);
+  background-color: black;
   border:solid 2px;
   border-radius: 5px;
   border-color: rgb(33, 220, 245);
@@ -140,4 +140,10 @@ a:hover {
 }
 .repositorio:hover {
   color: #fff;
+}
+.boton1{
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center;
+  cursor: pointer;
 }
