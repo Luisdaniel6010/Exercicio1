@@ -4,11 +4,20 @@ body{
 }
 
 header{
-background-color: darkgrey;
+background-color: black;
 height: 65px;
 border-radius: 5px;
 font-weight: 600;
 border: solid 2px rgb(33, 220, 245);
+
+}
+.imgc {
+  position: relative;
+  margin-top: 0%;
+  margin-trim: 100%;
+  
+  
+ 
 
 }
 
@@ -35,7 +44,7 @@ a:hover {
   border-radius: 50%; 
   position: absolute;
   left: 30%;
-  top: 12px;
+  top: 15px;
   border: solid 2px rgb(33, 220, 245);
 }
 .avatar2 {
@@ -149,6 +158,8 @@ a:hover {
 }
 
 .feet {
+  background-color: black;
+  color: #fff;
   position: relative;
   left: 0%;
   border: solid 2px;
@@ -172,9 +183,13 @@ a:hover {
 }
 
 .card__imagenf {
+  position: relative;
   width: 50px;
   height: 50px;
   margin: 0 0 0 5px;
+  border-radius: 50%;
+  display: inline-flex;
+   
 }
 
 .card2{
