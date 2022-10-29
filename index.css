@@ -1,0 +1,86 @@
+body{
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+background-color: darkgrey;
+height: 60px;
+border-radius: 5px;
+font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(7, 97, 109);
+
+    
+}
+ 
+nav li{
+    display: inline;
+    position: relative;
+    letter-spacing: 0,5px;
+    margin: 0 0 0 15px;
+    top: 30px;
+    left: 60%; 
+}
+
+a:hover {
+    color: #fff;
+}
+.avatar {
+  border-radius: 50%; 
+  position: absolute;
+  left: 30%;
+  top: 22px;
+}
+.avatar2 {
+    border-radius: 50%; 
+    position: relative;
+    left: 30%;
+    top: 22px;
+    border: solid 2px rgb(33, 220, 245);
+  }
+
+  .avatar2 {
+    border-radius: 50%; 
+    position: relative;
+    left: 30%;
+    top: 28px;
+    border: solid 2px rgb(33, 220, 245);
+
+  }
+
+  .avatar3 {
+        border-radius: 50%; 
+        position: relative;
+        left: 29%;
+        top: -10px;
+        border: solid 2px rgb(33, 220, 245);
+
+        }
+
+
+   .avatar4 {
+            border-radius: 50%; 
+            position: relative;
+            left: 36%;
+            top: -47px;
+            border: solid 2px rgb(33, 220, 245);
+        }
+
+   .avatar5 {
+            border-radius: 50%; 
+            position: relative;
+            left: 42%;
+            top: -149px;
+            border: solid 2px rgb(33, 220, 245);    
+   }        
+
+  .sobre1{
+    width: 600px;
+    position: relative;
+    left: 35%;
+    top: -110px;
+  }
