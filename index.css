@@ -3,12 +3,15 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 header{
 background-color: black;
 height: 65px;
 border-radius: 5px;
 font-weight: 600;
 border: solid 2px rgb(33, 220, 245);
+padding-left: -35%;  
+padding-right: -15%;
 
 }
 
@@ -26,6 +29,8 @@ nav li{
     margin: 0 0 0 15px;
     top: 30px;
     left: 60%; 
+    padding-left: -35%;  
+    padding-right: -15%;
 }
 
 a:hover {
@@ -53,59 +58,44 @@ a:hover {
     top: 28px;
     border: solid 2px rgb(33, 220, 245);
 
-  }
-
-  .avatar3 {
-        border-radius: 50%; 
-        position: relative;
-        left: 29%;
-        top: -10px;
-        border: solid 2px rgb(33, 220, 245);
-
-        }
-
-
-   .avatar4 {
-            border-radius: 50%; 
-            position: relative;
-            left: 36%;
-            top: -47px;
-            border: solid 2px rgb(33, 220, 245);
-        }
-
-   .avatar5 {
-            border-radius: 50%; 
-            position: relative;
-            left: 42%;
-            top: -149px;
-            border: solid 2px rgb(33, 220, 245);    
-   }        
+  } 
 
   .sobre1{
-    width: 600px;
+ 
     position: relative;
-    left: 35%;
-    top: -110px;
+    top: 5px;
     text-align: justify;
+    padding-left: 35%;
+    padding-right: 5%;
     
   }
-.formacao {
-  width: 600px;
+
+  .formacao {
+ 
     position: relative;
+    width: 600px;
     left: 35%;
     top: 0px;
 }
+
 .formacaos{
-  background-color: darkgray;
+    background-color: darkgray;
     position: relative;
+    width: auto;
     border: solid 2px rgb(33, 220, 245) ;
     border-radius: 5px;
+    padding-right: 5%;
+    text-align: justify;
+    padding-left: 35%;
+ 
     
 }
+
 .experience {
   border: solid 2px;
   border-color: rgb(33, 220, 245);
   border-radius: 5px;
+  left: 0%;
 }
 .unica1 {
   position: relative;
@@ -201,3 +191,14 @@ top: -200%;
   display:contents;
   letter-spacing: 1px;
   } 
+
+ .imgb {
+  position: relative;
+  height: 70px;
+  width: 180px;
+  left: 30%;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+ }
