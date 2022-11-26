@@ -1,64 +1,22 @@
-function validateEmail(e) {
-    let field = e.target;
-    let fieldValue = field.VAlue;
+document.addEventListener("DOMContentLoaded", function(){
+    document.getElementById("form").addEventListener('submit', validarFormulario);
+});
 
-    if (field.VAlue.search('@') === -1){
-        displayError('Email não válido', field);
-
-    }else if (field.VAlue.search('.com') === -1){
-        displayError('Email não válido', field);
-    
-    }else {
-        clearError(field);
+function validarFormulario(evento) {
+    evento.preventDefault();
+    let nombre = document.getElementById('nombre').value;
+    if(nombre.length == 0) {
+        console.log('nombre vacio');
+        return;
     }
+    let email = document.getElementById('email').value;
+    let regex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
-    field.classList,remove('not-validate');
-    checkEnableSubmit();
-}
+    if (email != regex) {
+        alert('E-mail no es valido');
+        document.getElementById('email').focus();
+        document.getElementById('email').value(" ");
 
-function displayError(message, field) {
-    classError(field)
-    field.classList.add('is-invalid');
-    let error = document.createElement('small');
-    error.style.color = 'red';
-    error.classList.add('error-message');
-    error.textContent = message;
-    field.parentElement.appendChild(error);
-
-}
-
-function clearError(field) {
-    let container = field.parentElement;
-    let error = container.querySlector('.error-message');
-    if (error) {
-        container.removeChild(error);
-    
     }
-    field.classList.remove('is-invalid');
-}
-
-function checkEnableSubmit(){
-    let form = document.querySelector('#form');
-    let notValidate = form.querySelectorAll('.not-validate');
-    let errors = form.querySelectorAll('.is-invalid');
-
-    if (errors.length == 0 && notValidate.length == 0) {
-        enableSubmit();
-    } else {
-        disableSubmit();
-    }
-}
-
-function enableSubmit() {
-    let form = document.querySelector('#form');
-    let submit = form.querySelector('[type=submit]');
-
-    submit.disable = false;
-}
-
-function disableSubmit() {
-    let form = document.querySelector('#form');
-    let submit = form.querySelector('[type=submit]');
-
-    submit.disable = true;
+    this.submit();
 }
