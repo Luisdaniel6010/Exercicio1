@@ -143,34 +143,37 @@
            
 
           </div> 
-          <div>
+          <div id="formulario">
 
             <form action="" id="form">
 
               <p><strong>Nome</strong>
-                <input type="text" class="form-control" 
-                placeholder="Jhon Wick" id="nombre"  required>
+                <input type="text"
+                placeholder="Jhon Wick" class="inputs required" oninput="nomeValidate()">
+                <span class="span-required">Nome deve ter no mínimo 4 caracteres</span>
               </p>
 
            
              <p><strong>E-mail</strong>
-                <input type="text" class="form-control email" 
-                placeholder="jhon@dom.com" id="email" required>
+                <input type="text" 
+                placeholder="jhon@dom.com" id="email" class="inputs required" required oninput="emailValidate()">
+                <span class="span-required">O e-mail deve ter um formato valido</span>
               </p>
 
             <p><strong>Asunto</strong>
-                <input type="text" class="form-control" id="asunto" required>
+                <input type="text" class="form-control" required>
+                <span class="span-required">No deixe o asunto vazío</span>
               </label>
             </p>
 
               <p><strong>Menssagem</strong></p>
                 <textarea name="description" cols="25" 
-                rows="4" id="msj" class="form-control"  required></textarea>
+                rows="4" id="msj" class="form-control"></textarea><br>
               
                       
             <button type="submit" id="enviar" class="form-control" >Enviar</button>
               
-            </form>  
+            </form> <br> 
           </div>
     </div>
 </footer>

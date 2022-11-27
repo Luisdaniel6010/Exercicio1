@@ -1,28 +1,36 @@
-document.addEventListener("DOMContentLoaded", function(){
-    document.getElementById("form").addEventListener('submit', validarFormulario);
-});
+const form =  document.getElementById('form');
+const campo = document.querySelectorAll('.required');
+const span = document.querySelectorAll('.span-required');
+const emailReg = /\w+@\w+\.\w+/;
 
-function validarFormulario(evento) {
+form.addEventListener('submit',evento =>{
     evento.preventDefault();
+    nomeValidate();
+    emailValidate();
+})
 
-    let nombre = document.getElementById('nombre').value;
-    let nomeregex = /([A-z]+\s)+/;
-    
-    if(nombre === nomeregex) {
-        console.log(nombre);
-        document.getElementById('nombre').focus();
-        document.getElementById('nombre').value="";
-        return;
+function mostError(index){
+    campo[index].style.border = '2px solid red';
+    span[index].style.display ='block';
     }
-    let email = document.getElementById('email').value;
-    let emailregex = /\w+@\w+\.\w+/;
+function deleteError(index) {
+    campo[index].style.border = '';
+    span[index].style.display ='none';
+}  
 
-    if(email != emailregex) {
-
-        alert('E-mail no es valido');
-        document.getElementById('email').focus();
-        document.getElementById('email').value="";
-
+function nomeValidate(){
+    if(campo[0].value.length < 3) {
+        mostError(0);
+    }else{
+        deleteError(0);
     }
-    this.submit();
+}
+
+function emailValidate() {
+    if(!emailReg.test(campo[1].value)){
+        mostError(1);
+    }else {
+        deleteError(1);
+    }
+    this.submit()
 }
