@@ -142,41 +142,47 @@
             <p><a href="https://www.youtube.com/c/LuisPe%C3%B1a6010/videos" target="_blank"><strong>https://bit.ly/3FyI9Md</strong></a></p>
            
 
-          </div> 
-          <div id="formulario">
+               </div> 
+    </div> 
 
-            <form action="" id="form">
+          <div id="formulario" class="form-control">
 
-              <p><strong>Nome</strong>
+            <form action="" id="form" class="form-control">
+            <div class="form-control">
+              <strong>Nome</strong>
                 <input type="text"
                 placeholder="Jhon Wick" class="inputs required" oninput="nomeValidate()">
                 <span class="span-required">Nome deve ter no mínimo 4 caracteres</span>
-              </p>
+            </div>
 
            
-             <p><strong>E-mail</strong>
+             <div class="form-control"><strong>E-mail</strong>
                 <input type="text" 
                 placeholder="jhon@dom.com" id="email" class="inputs required" required oninput="emailValidate()">
                 <span class="span-required">O e-mail deve ter um formato valido</span>
-              </p>
+             </div>
 
-            <p><strong>Asunto</strong>
-                <input type="text" class="form-control" required>
+            <div class="form-control"><strong>Asunto</strong>
+                <input type="text" required class="inputs required" required oninput="asuValidate()">
                 <span class="span-required">No deixe o asunto vazío</span>
               </label>
-            </p>
+            </div>
 
-              <p><strong>Menssagem</strong></p>
+              <div class="form-control"><strong>Menssagem</strong>
                 <textarea name="description" cols="25" 
-                rows="4" id="msj" class="form-control"></textarea><br>
+                rows="4" id="msj"></textarea>
+              </div>  
+                <br>
               
-                      
-            <button type="submit" id="enviar" class="form-control" >Enviar</button>
-              
-            </form> <br> 
+            <div>          
+            <button type="submit" id="enviar" class="form-control">Enviar</button>
+            </div><br>  
+            </form> 
           </div>
-    </div>
+
 </footer>
 <Script src="valid.js"></Script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" 
+integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -203,3 +203,51 @@ top: -200%;
   align-items: center;
   padding-left: 5px;
  }
+
+ .cnome {
+  margin: 10;
+    padding: auto;
+    background-color: #030518;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+ }
+
+ .cmail {
+  margin: 10;
+    padding: auto;
+    background-color: #030518;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+ }
+
+ .casunto {
+  margin: 10;
+  padding: auto;
+  background-color: #030518;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+ }
+ .area {
+    margin: 10;
+    padding: auto;
+    background-color: #030518;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+ }
+ .btn {
+  margin: 1%;
+  padding: auto;
+  background-color: #030518;
+  color: #ffffff;
+  justify-content: center;
+  height: 10vh;
+  }
+  

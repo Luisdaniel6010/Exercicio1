@@ -7,6 +7,7 @@ form.addEventListener('submit',evento =>{
     evento.preventDefault();
     nomeValidate();
     emailValidate();
+    asuValidate();
 })
 
 function mostError(index){
@@ -32,5 +33,12 @@ function emailValidate() {
     }else {
         deleteError(1);
     }
-    this.submit()
+  
+}
+function asuValidate(){
+    if(campo[2].value.length = 0) {
+        mostError(2);
+    }else{
+        deleteError(2);
+    }
 }
