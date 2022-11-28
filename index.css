@@ -118,9 +118,11 @@ a:hover {
 
 }
 .card3 {
+  border: solid 1px rgb(33, 220, 245) ;
+  border-radius: 10px;
   width: 300px;
   position: relative;
-  left: 40%;
+  left: 5%;
 }
 .repositorio {
   background-color: black;
